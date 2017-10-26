@@ -1,22 +1,130 @@
-<html> 
+<!doctype html>
+<html>
 <head>
-        <title>
-		Pritish Thakkar
-	</title>
+	<link href='https://fonts.googleapis.com/css?family=Carter One' rel='stylesheet'>
+	<title>DRUM KIT</title>
+	<meta charset = "UTF-8">
+	<style type="text/css">
+		body{
+			background-image: url("./ss.jpg");
+			background-size: 100% 700px;	
+		    background-repeat: no-repeat;
+		    backdrop-filter: blur(5px);
+		}
+		.key{
+			color:	#591105;
+			display: inline-table; 
+			border: 2px solid #771515;
+			margin-left: 30px;
+			border-radius: 10%;
+			padding-right: 30px;
+			padding-left: 30px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			transition:all 0.07s;
+		}
+		.keys{
+			margin-left: 80px;
+			margin-top: 250px;
+		}
+		kbd{
+			display: block;
+			text-align: center;
+			font-size: 40px;
+		}
+		.notify{
+			color:	#591105;
+			font-family: 'Carter One';
+			font-size: 22px;
+			margin-left: 320px;
+			margin-top: 100px;
+		}
+		.by{
+			color:	#590a0e;
+			font-family: 'Carter One';
+			font-size: 22px;
+			margin-left: 620px;
+			margin-top: 10px;
+		}
+		.playing{
+			color:	white;
+			transform: scale(1.3);
+			border-color: #ffc600;
+			box-shadow: 0 0 10px #ffc600;
+		}
+	</style>
 </head>
-
 <body>
-<div style = "top: 80px; left : 250px; position: relative;"> <h1>ma5terdrag0n arena ! <h1></div>
+	<div class = "keys">
+		<div data-key = "65" class  = "key">
+			<kbd>A</kbd>
+		</div>
+		<div data-key = "83" class  = "key">
+			<kbd>S</kbd>
+		</div>
+		<div data-key = "68" class  = "key">
+			<kbd>D</kbd>
+		</div>
+		<div data-key = "70" class  = "key">
+			<kbd>F</kbd>
+		</div>
+		<div data-key = "71" class  = "key">
+			<kbd>G</kbd>
+		</div>
+		<div data-key = "72" class  = "key">
+			<kbd>H</kbd>
+		</div>
+		<div data-key = "74" class  = "key">
+			<kbd>J</kbd>
+		</div>
+		<div data-key = "75" class  = "key">
+			<kbd>K</kbd>
+		</div>
+		<div data-key = "76" class  = "key">
+			<kbd>L</kbd>
+		</div>
+	</div>
 
-        <div style = "height: 300px; width: 400px; left: 200px; top: 500px;">
-                <div style = "left: 200px; top: 100px;background-color: #C8C8C8; height : 20px; position: relative; width : 500px; border-radius:25px 25px 0px 0px;" >
-                        <code style = "color : black"> <div style = "margin : 5px 5px 5px 10px;background-color: red; height : 10px; width: 10px; border-radius: 50%; left: 5px; float: left;"></div><div style = "margin: 5px;background-color: yellow; height : 10px; width: 10px; border-radius: 50%; left: 5px; float: left;"></div><div style = "margin : 5px;background-color: green; height : 10px; width: 10px; border-radius: 50%; left: 5px;float : left;"></div> <code style= "margin: 5px; float: left;">Terminal</code> </code>
-                 </div>
-                 
-                <div style = "left: 200px; top: 95px;background-color: black; height : 280px; width : 500px; position: relative;border-radius : 0px 0px 25px 25px;"> 
-                        <pre style = "color: palegreen; margin: 4px; align: left;">pritish@pritish~: Welcome to my world !!</pre>
-                </div>
-        </div>
-        	
+	<div class = "notify">
+		Press the mentioned keys to hear cool kick sounds.
+	</div>
+	<div class = "by">
+		-&copy;Pritish Thakkar
+	</div>
+	<audio data-key="65" src = "./sub_kick_28_A.wav"></audio>
+	<audio data-key="83" src = "./sub_kick_07_D.wav"></audio>
+	<audio data-key="68" src = "./sub_kick_36_B.wav"></audio>
+	<audio data-key="70" src = "./sub_kick_35_B.wav"></audio>
+	<audio data-key="71" src = "./sub_kick_09_D.wav"></audio>
+	<audio data-key="72" src = "./trad_kick_45_B.wav"></audio>
+	<audio data-key="74" src = "./trad_kick_46_B.wav"></audio>
+	<audio data-key="75" src = "./trad_kick_47_B.wav"></audio>
+	<audio data-key="76" src = "./trad_kick_48_B.wav"></audio>
+	<script>
+		function playSound(e){
+			const audio = document.querySelector(`audio[data-key = "${e.keyCode}"]`);
+			const key = document.querySelector(`.key[data-key = "${e.keyCode}"]`);
+			if(!audio){
+				return;
+			}
+			audio.currentTime = 0;
+			audio.play();
+			key.classList.add('playing');
+		}		
+
+		function removeTransition(e){
+			if (e.propertyName !== 'transform')	return;
+			this.classList.remove('playing');
+			console.log(this);
+		}
+		var keys = document.querySelectorAll('.key');
+		var i;
+		for (  i = 0; i < keys.length; i++) {
+			console.log(keys[i]);
+    		keys[i].addEventListener('transitionend', removeTransition);
+		}
+		window.addEventListener('keydown', playSound);
+		
+	</script> 
 </body>
 </html>

@@ -1,0 +1,32 @@
+body{
+    background-image: url("images/hack.jpg");
+}
+
+.maindiv{
+    background: black;
+    height: 1000px;
+    color: palegreen;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.imagewala{
+    padding-top: 50px;
+    position: relative;
+    text-align: center;
+}
+
+.myphoto{
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+hr {
+   background-color:  palegreen;
+}
+.myname{
+    color: palegreen;
+    text-align: center;
+}

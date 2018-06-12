@@ -13,7 +13,7 @@ function typewriter(){
     destination.innerHTML = data.substring(0, curr_idx);
     if(data.length == curr_idx){
         blink();
-        setTimeout("show()", 2000);
+        setTimeout("show()", 4000);
         return;
     }else{
         destination.innerHTML = data.substring(0, curr_idx) + cursor;
@@ -50,8 +50,8 @@ function blinkHack(){
     elem.innerHTML = '';
     elem.style.width = 0 + '%';
     var temp = document.getElementById('hacked');
-    temp.style.fontSize = "60px";
-    temp.innerHTML = "Hacked !";
+    temp.style.fontSize = "50px";
+    temp.innerHTML = "Hacked!";
     
 }
 

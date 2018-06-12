@@ -18,6 +18,7 @@ function typewriter(){
 }
 
 function show(){
+    $(".loader").hide();
     $("#educationId").slideDown(1000);
 }
 

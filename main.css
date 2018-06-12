@@ -17,6 +17,19 @@ body{
     text-align: center;
 }
 
+.tomjerry{
+    position: relative;
+    text-align: center;
+}
+
+.loader{
+    border-radius: 50%;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border: 5px solid palegreen;
+}
+
 .myphoto{
     display: block;
     width: 200px;

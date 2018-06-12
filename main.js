@@ -8,7 +8,7 @@ function typewriter(){
     destination.innerHTML = data.substring(0, curr_idx);
     if(data.length == curr_idx){
         blink();
-        setTimeout("show()", 5000);
+        setTimeout("show()", 2000);
         return;
     }else{
         destination.innerHTML = data.substring(0, curr_idx) + cursor;
@@ -20,6 +20,7 @@ function typewriter(){
 function show(){
     $(".loader").hide(1000);
     $("#educationId").slideDown(1000);
+    $('#cpId').slideDown(1000);
 }
 
 function sleep(ms) {

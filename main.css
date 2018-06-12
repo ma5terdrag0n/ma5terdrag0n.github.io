@@ -1,11 +1,14 @@
 body{
     background-image: url("images/hack.jpg");
+}
+
+div.container{
     font-family: 'Courier New', Courier, monospace;
 }
 
 .maindiv{
     background: black;
-    height: 1000px;
+    height: 2000px;
     color: palegreen;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -44,11 +47,21 @@ hr {
 }
 
 
-.education{
+.education, .cp{
     color: palegreen;
     display: none;
 }
 
 pre{
     color: palegreen;
+}
+
+.judge{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.link1{
+    color: palegoldenrod;
 }

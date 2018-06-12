@@ -50,7 +50,7 @@ function blinkHack(){
     elem.innerHTML = '';
     elem.style.width = 0 + '%';
     var temp = document.getElementById('hacked');
-    temp.style.fontSize = "100px";
+    temp.style.fontSize = "60px";
     temp.innerHTML = "Hacked !";
     
 }

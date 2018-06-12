@@ -29,4 +29,5 @@ hr {
 .myname{
     color: palegreen;
     text-align: center;
+    margin-bottom: -50px;
 }

@@ -23,10 +23,16 @@ div.container{
 .tomjerry{
     position: relative;
     text-align: center;
+    width: 100%;
 }
 
 .loader{
-    margin: auto;
+    width: 1%;
+    height: 30px;
+    background-color: rgb(111, 245, 111);
+    border-radius: 2%;
+    color: black;
+    font-size: 20px;
 }
 
 .myphoto{
@@ -65,6 +71,8 @@ pre{
 .link1{
     color: palegoldenrod;
 }
+
+
 
 @media screen and (max-width: 480px) {
     .judge {

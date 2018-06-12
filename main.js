@@ -4,6 +4,7 @@ var cursor = '|';
 var foo=1;
 var startprogressbar=0;
 
+// Typewriter effect in name
 function typewriter(){
     if(startprogressbar==0){
         startprogressbar=1;
@@ -22,12 +23,15 @@ function typewriter(){
     setTimeout("typewriter()", 150);
 }
 
+// Hide Hacked and show all the tables and data
 function show(){
     $(".tomjerry").hide();
     $("#educationId").slideDown(1000);
     $('#cpId').slideDown(1000);
 }
 
+
+// Progress bar code
 function startIt(){
     setInterval(startBlinking, 10);
     var elem = document.getElementById("pbar");
@@ -45,6 +49,7 @@ function startIt(){
     }
 }
 
+// remove "Hacking.." and adds Hacked
 function blinkHack(){
     var elem = document.getElementById("pbar");
     elem.innerHTML = '';
@@ -55,16 +60,13 @@ function blinkHack(){
     
 }
 
+// This blinks "Hacked exploding db" string.
 function startBlinking(){
     $('#hacked').fadeOut(500);
     $('#hacked').fadeIn(500);
-}
+}  
 
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-  }
-  
-
+// Blink the cursor after name
 function blink(){
     var destination = document.getElementById("typeitbaby");
     if(foo%2==0){
@@ -77,4 +79,5 @@ function blink(){
     setTimeout("blink()", 400);
 }
 
+// What to do when window loads :P
 window.onload = typewriter;

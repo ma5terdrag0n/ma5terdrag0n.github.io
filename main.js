@@ -18,7 +18,7 @@ function typewriter(){
 }
 
 function show(){
-    $(".loader").hide();
+    $(".loader").hide(1000);
     $("#educationId").slideDown(1000);
 }
 

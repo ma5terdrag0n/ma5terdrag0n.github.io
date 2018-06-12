@@ -8,7 +8,7 @@ function typewriter(){
     destination.innerHTML = data.substring(0, curr_idx);
     if(data.length == curr_idx){
         blink();
-        show();
+        setTimeout("show()", 5000);
         return;
     }else{
         destination.innerHTML = data.substring(0, curr_idx) + cursor;
@@ -21,6 +21,11 @@ function show(){
     $(".loader").hide(1000);
     $("#educationId").slideDown(1000);
 }
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+  
 
 function blink(){
     var destination = document.getElementById("typeitbaby");

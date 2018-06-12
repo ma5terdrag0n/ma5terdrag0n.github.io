@@ -23,7 +23,7 @@ function typewriter(){
 }
 
 function show(){
-    $(".tomjerry").hide(1000);
+    $(".tomjerry").hide();
     $("#educationId").slideDown(1000);
     $('#cpId').slideDown(1000);
 }

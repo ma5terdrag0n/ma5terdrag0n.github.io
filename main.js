@@ -51,7 +51,7 @@ function blinkHack(){
     elem.style.width = 0 + '%';
     var temp = document.getElementById('hacked');
     temp.style.fontSize = "50px";
-    temp.innerHTML = "Hacked!";
+    temp.innerHTML = "Hacked!<br>Exploding db";
     
 }
 

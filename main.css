@@ -1,5 +1,6 @@
 body{
     background-image: url("images/hack.jpg");
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .maindiv{
@@ -30,4 +31,14 @@ hr {
     color: palegreen;
     text-align: center;
     margin-bottom: -50px;
+}
+
+
+.education{
+    color: palegreen;
+    display: none;
+}
+
+pre{
+    color: palegreen;
 }

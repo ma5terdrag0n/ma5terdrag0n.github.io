@@ -8,12 +8,17 @@ function typewriter(){
     destination.innerHTML = data.substring(0, curr_idx);
     if(data.length == curr_idx){
         blink();
+        show();
         return;
     }else{
         destination.innerHTML = data.substring(0, curr_idx) + cursor;
     }
     curr_idx++;
     setTimeout("typewriter()", 150);
+}
+
+function show(){
+    $("#educationId").slideDown(1000);
 }
 
 function blink(){

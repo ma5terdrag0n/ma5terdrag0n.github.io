@@ -103,6 +103,11 @@ pre{
     text-align: center;
     margin: auto;
     border: 1px solid palegreen;
+    opacity: 0.9;
+}
+
+.weee:hover{
+    opacity: 1;
 }
 
 .microsoft{

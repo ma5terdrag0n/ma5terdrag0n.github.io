@@ -63,9 +63,9 @@ pre{
 }
 
 .judge{
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
+    font-family: 'Orbitron', monospace;
+    padding: 10px;
+    color: palegoldenrod;
 }
 
 .link1{
@@ -78,13 +78,6 @@ pre{
     text-align: center;
     border: 1px solid palegreen;
     background-color: black;
-}
-
-.blogg:hover {
-    transform: scale(1.1, 1.08);
-    -webkit-transition: transform 0.5s ease-in-out;
-    opacity: 1;
-    z-index: 10;
 }
 
 .blogrow{
@@ -119,11 +112,18 @@ pre{
     margin: auto;
 }
 
+.cpp{
+    width: 150px;
+    height: 150px;
+    margin: auto; 
+}
+
 @media screen and (max-width: 480px) {
-    .judge {
-        display: none;
-    }
+    
     .blogg:hover {
         transform: scale(1.0, 1.00);
+    }
+    .maindiv{
+        height: 3000px;
     }
 }

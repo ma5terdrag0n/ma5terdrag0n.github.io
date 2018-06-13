@@ -87,6 +87,11 @@ pre{
     opacity: 1;
 }
 
+.blogrow{
+    width: 95%;
+    margin: auto;
+}
+
 #explode{
     font-family: 'Orbitron', monospace;
 }
@@ -99,5 +104,8 @@ pre{
 @media screen and (max-width: 480px) {
     .judge {
         display: none;
+    }
+    .blogg:hover {
+        transform: scale(1.0, 1.00);
     }
 }

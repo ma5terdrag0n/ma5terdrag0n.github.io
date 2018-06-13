@@ -53,7 +53,7 @@ hr {
 }
 
 
-.education, .cp, .blogging{
+.education, .cp, .blogging, .we{
     color: palegreen;
     display: none;
 }
@@ -81,10 +81,10 @@ pre{
 }
 
 .blogg:hover {
-    transform: scale(1.1, 1.08); /** default is 1, scale it to 1.5 */
-    background-color: black;
-    color: palegreen;
+    transform: scale(1.1, 1.08);
+    -webkit-transition: transform 0.5s ease-in-out;
     opacity: 1;
+    z-index: 10;
 }
 
 .blogrow{

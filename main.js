@@ -29,6 +29,7 @@ function show(){
     $("#educationId").fadeIn(3000);
     $('#cpId').fadeIn(3000);
     $('#bloggingId').fadeIn(3000);
+    $('#weId').fadeIn(3000);
 }
 
 

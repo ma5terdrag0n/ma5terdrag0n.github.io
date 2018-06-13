@@ -53,7 +53,7 @@ hr {
 }
 
 
-.education, .cp{
+.education, .cp, .blogging{
     color: palegreen;
     display: none;
 }
@@ -72,10 +72,32 @@ pre{
     color: palegoldenrod;
 }
 
+.blogg{
+    height: 200px;
+    padding-top: 50px;
+    text-align: center;
+    border: 1px solid palegreen;
+    background-color: black;
+}
 
+.blogg:hover {
+    transform: scale(1.1, 1.08); /** default is 1, scale it to 1.5 */
+    background-color: black;
+    color: palegreen;
+    opacity: 1;
+}
+
+#explode{
+    font-family: 'Orbitron', monospace;
+}
+
+.bloglink{
+    font-family: 'Orbitron', monospace;
+    color: palegoldenrod;
+}
 
 @media screen and (max-width: 480px) {
     .judge {
-        display:none;
+        display: none;
     }
 }

@@ -3,7 +3,7 @@ var curr_idx = 0;
 var cursor = '|';
 var foo=1;
 var startprogressbar=0;
-
+var counter = 5;
 // Typewriter effect in name
 function typewriter(){
     if(startprogressbar==0){
@@ -14,7 +14,7 @@ function typewriter(){
     destination.innerHTML = data.substring(0, curr_idx);
     if(data.length == curr_idx){
         blink();
-        setTimeout("show()", 4000);
+        setTimeout("show()", 6000);
         return;
     }else{
         destination.innerHTML = data.substring(0, curr_idx) + cursor;
@@ -26,8 +26,9 @@ function typewriter(){
 // Hide Hacked and show all the tables and data
 function show(){
     $(".tomjerry").hide();
-    $("#educationId").slideDown(1000);
-    $('#cpId').slideDown(1000);
+    $("#educationId").fadeIn(3000);
+    $('#cpId').fadeIn(3000);
+    $('#bloggingId').fadeIn(3000);
 }
 
 
@@ -56,8 +57,15 @@ function blinkHack(){
     elem.style.width = 0 + '%';
     var temp = document.getElementById('hacked');
     temp.style.fontSize = "50px";
-    temp.innerHTML = "Hacked!<br>Exploding db";
-    
+    temp.innerHTML = "Hacked!";
+    explode();
+}
+
+function explode(){
+    var x = document.getElementById('explode');
+    x.innerHTML = "Exploding database in " + counter + "s";
+    counter--;
+    setTimeout("explode()", 1000);
 }
 
 // This blinks "Hacked exploding db" string.

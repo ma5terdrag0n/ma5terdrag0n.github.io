@@ -101,6 +101,24 @@ pre{
     color: palegoldenrod;
 }
 
+.werow{
+    width: 95%;
+    margin: auto;
+}
+
+.weee{
+    text-align: center;
+    margin: auto;
+    border: 1px solid palegreen;
+}
+
+.microsoft{
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
 @media screen and (max-width: 480px) {
     .judge {
         display: none;

@@ -101,7 +101,7 @@ $(document).ready(function () {
     $link.mouseenter(function(){
         $box.slideDown(500);
         $link.slideUp(500);
-        setTimeout("HideItAgain()", 2000);
+        setTimeout("HideItAgain()", 3000);
     });
 });
 

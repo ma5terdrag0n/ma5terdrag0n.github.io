@@ -30,6 +30,7 @@ function show(){
     $('#cpId').fadeIn(3000);
     $('#bloggingId').fadeIn(3000);
     $('#weId').fadeIn(3000);
+    $('#skillsId').fadeIn(3000);
 }
 
 
@@ -62,6 +63,7 @@ function blinkHack(){
     explode();
 }
 
+// Explode counter
 function explode(){
     var x = document.getElementById('explode');
     x.innerHTML = "Exploding database in " + counter + "s";
@@ -87,6 +89,21 @@ function blink(){
     }
     setTimeout("blink()", 400);
 }
+
+function HideItAgain(){
+    $("#box").slideUp(500);
+    $(".webdevskill").slideDown(500);
+}
+
+$(document).ready(function () {
+    var $link = $(".webdevskill");
+    var $box = $("#box");
+    $link.mouseenter(function(){
+        $box.slideDown(500);
+        $link.slideUp(500);
+        setTimeout("HideItAgain()", 2000);
+    });
+});
 
 // What to do when window loads :P
 window.onload = typewriter;

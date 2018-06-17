@@ -1,0 +1,44 @@
+#fullpage{
+	height: 100vh;
+	overflow: hidden;	
+}
+
+#fullpage section{
+	height: 100vh;
+}
+
+#fullpage section h1{
+	text-align: center;
+	color: palegreen;
+	padding-top: 300px;
+}
+
+#fullpage section{
+	font-family: 'Orbitron', monospace;
+	text-align: center;
+
+}
+
+#fullpage section:nth-child(1){
+	background-color: black;
+}
+
+#fullpage section:nth-child(2){
+	background-color: rgb(12, 40, 117);
+}
+
+.arcade{
+	display: none;
+}
+
+.downarrow{
+	background-color: black;
+	width: 60px;
+	height: 100px;
+}
+
+@media screen and (max-width: 480px) {
+	#fullpage section h1{
+		padding-top: 100px;
+	}
+}

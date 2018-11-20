@@ -8,7 +8,7 @@ div.container{
 
 .maindiv{
     background: black;
-    height: 2000px;
+    height: 2100px;
     color: palegreen;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -85,6 +85,14 @@ pre{
     background-color: black;
 }
 
+.bloggimg{
+    height: 200px;
+    text-align: center;
+	padding-top: 10px;
+    border: 1px solid palegreen;
+    background-color: black;
+}
+
 .blogrow{
     width: 95%;
     margin: auto;
@@ -156,9 +164,16 @@ pre{
         transform: scale(1.0, 1.00);
     }
     .maindiv{
-        height: 3100px;
+        height: 3350px;
     }
     .skillcol2{
         height: 90px;
     }
+	.bloggimg{
+		height: 250px;
+		text-align: center;
+		padding-top: 10px;
+		border: 1px solid palegreen;
+		background-color: black;
+	}
 }

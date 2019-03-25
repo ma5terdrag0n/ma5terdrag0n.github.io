@@ -1,0 +1,102 @@
+body{
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif
+}
+.skillsi{
+    width: 100px;
+    height: 100px;
+}
+
+.skills{
+    background-color: #000F6E;
+    width: 100%;
+    height: 602px;
+}
+
+.blog{
+    background-color: #000F6E;
+    width: 100%;
+    height: 602px;
+}
+
+.internimg{
+    width: 200px;
+    height: 200px;
+}
+
+.blogimg{
+    width: 283px;
+    height: 283px;
+}
+
+.baloon{
+    width: 1275px;
+    height: 1212.37px;
+    z-index: -100;
+    top:-450.21px;
+    left: -450px;
+    position: absolute;
+}
+
+.myphoto{
+    padding-top: 50px;
+    margin: auto;
+    text-align: center;
+}
+
+.myname{
+    padding-top: 30px;
+}
+
+.rollercontainer{
+    padding-top: 50px;
+    margin: auto;
+    text-align: center;
+}
+
+.roller{
+    padding-bottom: 50px;
+    height: 100px;
+}
+
+
+.profilelinks{
+    float: right;
+    padding-top: 10px;
+    padding-right: 10%;
+}
+
+.contactMe{
+    float: left;
+    padding-top: 10px;
+    padding-left: 10%;    
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .profilelinks{
+        display: none;
+    }
+
+    .baloon{
+        width: 1275px;
+        height: 1212.37px;
+        z-index: -100;
+        top: -750px;
+        left: -600px;
+        position: absolute;
+    }
+
+    .roller{
+        display: none;
+    }
+
+    .profilepic{
+        width: 300px;
+        height: 300px;
+    }
+
+}

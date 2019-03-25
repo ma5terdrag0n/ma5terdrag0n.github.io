@@ -82,11 +82,10 @@ body{
     }
 
     .baloon{
-        width: 1275px;
         height: 1212.37px;
         z-index: -100;
-        top: -750px;
-        left: -600px;
+        top: -650px;
+        left: -900px;
         position: absolute;
     }
 

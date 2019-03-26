@@ -8,7 +8,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Hello, world!</title>
+    <title>Pritish Thakkar</title>
+    <script>
+      function changeText(){
+        console.log('hi');
+        document.getElementById("email").innerText = "pritishthakkar.cse@gmail.com";
+      }
+    </script>
+
   </head>
   <body>
 
@@ -17,22 +24,26 @@
       <img class="baloon" src="./images/Group 41.png">
       <div class="header row"> 
         <div class="contactMe col-lg-6 col-sm-6 col-md-6">
+          <button class="contactmebaby" onclick="changeText()">
             <img src="./images/contactMe.png">
-            <span style="color: white;">Contact Me</span>    
+            <span id="email" >Contact Me</span>    
+          </button>
         </div>
         <div class="col-lg-6 col-sm-6 col-md-6">
           <div class="profilelinks">
-            <img class="fb" src="./images/Facebook.png">
-            <img src="./images/Linked in.png">
+            <a href="https://www.facebook.com/pritish.thakkar2"><img class="fb" src="./images/Facebook.png"></a>
+            <a href="https://www.linkedin.com/in/pritish-thakkar-a06225114/"><img src="./images/Linked in.png"></a>
           </div>
         </div>
       </div>
 
-      <div class="myphoto">
+      <div class="tagline">
         <img class="img-fluid profilepic" src="./images/myphoto.png" style="width: 350px; height: 350px;">
-        <h1 class="myname">Hi, I am Pritish Thakkar.</h1>
-        <span style="font-size: 30px; color: #8F9EA5;">SDE @ </span>
-        <span style="font-size: 30px; color: #027BFF">Amazon</span>
+        <div class="tagcontent">
+          <h1 class="myname">Hi, I am Pritish Thakkar.</h1>
+          <span style="font-size: 30px; color: #8F9EA5;">Student @ </span>
+          <span style="font-size: 30px; color: #027BFF">PEC</span>  
+        </div>
       </div>
 
       <div class="rollercontainer">
@@ -42,22 +53,22 @@
 
       <div class="skills container-fluid">
         <div>
-          <h3> Skills</h3>
-          <h5> College level experience. </h5>
-          <div class="row">
-            <div class="col-lg-3 ">
+          <h1 style="padding-top: 100px; font-weight: 900;"> Skills</h1>
+          <h4> College level experience. </h4>
+          <div class="row skill_row container">
+            <div class="col-lg-3 col-sm-6 skillset">
               <img class="skillsi" src="./images/911px-ISO_C++_Logo.svg.png">
             </div>
             
-            <div class="col-lg-3 ">
+            <div class="col-lg-3 col-sm-6 skillset">
               <img class="skillsi" src="./images/1024px-HTML5_Badge.svg.png">
             </div>
             
-            <div class="col-lg-3 ">
+            <div class="col-lg-3 col-sm-6 skillset">
               <img class="skillsi" src="./images/Symbol 17 – 2.png">
             </div>
             
-            <div class="col-lg-3 ">
+            <div class="col-lg-3 col-sm-6 skillset" style="padding-bottom: 100px;">
               <img class="skillsi" src="./images/andro.png">
             </div>
           </div>
@@ -65,50 +76,75 @@
       </div>
 
       <div class="container interns">
-        <h1>Internship Experience</h1>
+        <h1 style="font-weight: 900; margin-bottom: 40px;">Internship Experience</h1>
         <div class="row">
-          <div class="col-lg-3">
-            <img src="./images/1024px-Microsoft_logo.svg.png" class="internimg">
-            <div>
-              <h5>Microsoft</h5>
-            </div>
-          </div>
-          <div class="col-lg-9">
-            <h5>
-              1. Fixed some Microsoft Outlook bugs.<br>
-              2. Created a regression testing framework.
-            </h5>
-          </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-3">
-              <img src="./images/coinsafe.png" class="internimg">
-              <div>
-                <h5>Coinsafe</h5>
+          <div class="col-lg-6">
+            <div class="companylogo">
+              <img src="./images/1024px-Microsoft_logo.svg.png" class="internimg">
+              <div class="companydiv">
+                <h4>Microsoft</h4>
               </div>
             </div>
-            <div class="col-lg-9">
-              <h5>
-                  1. Secret key recovery in crypto wallets.<br>
-                  2. JS library for offline signing in a Monero wallet.
-              </h5>
+          </div>
+          <div class="col-lg-6">
+            <div class="companyinfo">
+              <ul>
+                <li>
+                    <h4>Fixed some Microsoft Outlook bugs.</h4>
+                </li>
+                <li>
+                    <h4>Created a regression testing framework.</h4>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-lg-6">
+              <div class="companylogo">
+                <img src="./images/coinsafe.png" class="internimg">
+                <div class="companydiv">
+                  <h4>Coinsafe</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 companyinfo">
+              <ul>
+                <li>
+                    <h4>Secret key recovery in crypto wallets.</h4>
+                </li>
+                <li>
+                    <h4>JS library for offline signing in a Monero wallet.</h4>
+                </li>
+              </ul>
             </div>
           </div>
       </div> 
 
       <div class="blog container-fluid">
-          <div>
-            <h3> Blog</h3>
+        <div>
+          <h1 style="padding-top: 100px; font-weight: 900; margin-bottom: 20px;"> Blog</h1>
+          <a href='https://gocodergo.wordpress.com/'>
             <img class="blogimg" src="images/wordpress.png">
-            <h5>
-              Competitive Programming
-            </h5>
-            <h5>
-              Cryptocurrency
-            </h5>
-            <h5>
-              Interview Experiences
-            </h5>
+          </a> 
+          <h4 style="margin-top: 20px;">
+            Competitive Programming
+          </h4>
+          <h4>
+            Cryptocurrency
+          </h4>
+          <h4 style="padding-bottom: 100px;">
+            Interview Experiences
+          </h4>
+        </div>  
+      </div>
+
+        <div class="footer container-fluid">
+          <div>
+            <h5 style="padding: 10px;">© Pritish Thakkar2019</h5>
           </div>  
         </div>
 

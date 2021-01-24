@@ -1,0 +1,31 @@
+
+body { 
+    padding-top: 70px; 
+    background-color:  	#F8F8F8;
+}
+.block {
+    position: relative;
+    width: 85%;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
+.shortDescription {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+
+.blogDate{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.belowHeader{
+    width:60%;
+    margin-right:40%;
+}

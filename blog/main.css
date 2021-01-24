@@ -1,13 +1,10 @@
 
 body { 
-    padding-top: 70px; 
+    padding-top: 65px; 
     background-color:  	#F8F8F8;
 }
 .block {
     position: relative;
-    width: 85%;
-    margin-left: 7.5%;
-    margin-right: 7.5%;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 20px;
@@ -70,12 +67,25 @@ body {
     font-family: 'Inconsolata', monospace;
     font-family: 'Source Sans Pro', sans-serif;
 }
-
+.headImage{
+    margin-top: -10px;
+    width: 100%; 
+    height: 40vh;
+    margin-bottom: 30px;
+}
 
 @media only screen and (min-width: 1000px) {
 .blogBlock{
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
+}
+.block{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.headImage{
+    height: 70vh;
 }
 }

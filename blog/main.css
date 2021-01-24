@@ -29,3 +29,53 @@ body {
     width:60%;
     margin-right:40%;
 }
+
+.blogTitle{
+    margin: auto;
+}
+
+.blogBlogDate{
+    font-size: 14px;
+    line-height: 1.5;
+    color: grey;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.blogContent{
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+.authorDetails{
+    margin-top: 10px;
+}
+
+.authorImage{
+ text-align: center;
+ background-color: black; 
+ color: white; 
+ border-radius: 50%; 
+ width: 35px; 
+ height: 35px;
+ padding-top: 5px;
+ float: left;
+ position: relative;
+}
+.authorName{
+    padding-top: 5px;
+    margin-left: 40px;
+    position: relative;
+    font-size: 16px;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+@media only screen and (min-width: 1000px) {
+.blogBlock{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+}
